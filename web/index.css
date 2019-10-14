@@ -1,0 +1,136 @@
+body {
+  background-size: cover;
+   background-position: center center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.btn 
+{
+  cursor: pointer;
+}
+
+.clicked 
+{
+  color: #7f8c8d;
+}
+
+.form,
+.greetings
+{
+  display: none;
+}
+
+.showing
+{
+  display: block;
+  margin-bottom: 30px;
+}
+
+@keyframes fadeIn 
+{
+  from 
+  {
+    opacity: 0;
+  }
+  to 
+  {
+    opacity: 1;
+  }
+}
+
+.bgImage 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+div {
+  display: block;
+}
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-size: 10em;
+  
+}
+
+h4
+{ /* -webkit-text-stroke: 2px #000;  테두리 */ 
+ font-size: 3em;
+}
+
+.js-weather
+{
+  font-style: italic;
+    font-size: 25px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+ button
+ {
+  margin-right: 10px;
+  cursor: pointer;
+  background: none;
+  appearance: none;
+ }
+ ul
+ {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   font-weight: bold;
+   font-size: 22px;
+
+
+ }
+
+#centerBox
+{
+  text-align: center;
+}
+#tt 
+{
+  float: left;
+  height: 750px;
+    
+}
+
+input {
+  background: none;
+  appearance: none;
+  border: 0;
+  font-size: 22px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+body, html {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
